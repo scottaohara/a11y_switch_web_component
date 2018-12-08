@@ -1,0 +1,84 @@
+/**
+ * Demo styles
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+  font-family: Helvetica, Arial;
+}
+
+body.transition {
+  transition: background .42s ease-in-out;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#app {
+  background: #fefefe;
+  border-radius: 2px;
+  color: #111;
+  margin: 1em auto;
+  max-width: 25em;
+  padding: 1.5em;
+}
+
+#app.transition {
+  transition:
+    background .42s ease-in-out,
+    color .42s ease-in-out;
+}
+
+.settings-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.setting-list li:before {
+  content: "\200B";
+  position: absolute;
+  /*
+    see: unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none
+  */
+}
+
+.settings-list li:not(:last-child) {
+  border-bottom: 1px solid #555;
+  margin: 0;
+}
+
+.desc-ex {
+  font-size: .825rem;
+  margin-top: .125em;
+  padding-left: .5rem;
+}
+
+/**
+ * Dark Mode Styles
+ */
+.dark-mode {
+  background: #1a2a2a;
+}
+
+.dark-mode #app {
+  background: rgba(100,100,100,.2);
+  color: #eee;
+}
+
+
+/**
+ * Reduced Motion Prefs
+ */
+@media ( prefers-reduced-motion: reduce ) {
+  body.transition,
+  .transition #app {
+    transition: none;
+  }
+}
