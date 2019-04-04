@@ -17,7 +17,7 @@ I'm sure this could be better constructed, so PRs are welcome :)
 
 
 ## Screen Reader Quirks
-Rather than updating this information in multiple places, please [review the breakdown of screen reader issues with `role="switch"`](https://scottaohara.github.io/a11y_styled_form_controls/src/checkbox--switch/#affects_on_sr).  While this particular link goes to an example of using `role=switch` on a checkbox, the same issues occur if using `role=switch` on a `button` element as well, as this web component does.
+Please [review the breakdown of screen reader issues with `role="switch"`](https://scottaohara.github.io/a11y_styled_form_controls/src/checkbox--switch/#affects_on_sr).  While this particular link goes to an example of using `role=switch` on a checkbox, the same issues occur if using `role=switch` on a `button` element as well, as this web component does.
 
 
 ## License & Such
