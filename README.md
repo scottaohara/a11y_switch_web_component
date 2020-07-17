@@ -2,7 +2,7 @@
 
 An example of switch controls (`role=switch`) built as a web component.
 
-I'm sure this could be better constructed, so PRs are welcome :) 
+I'm sure this could be better, so PRs are welcome :) 
 
 
 ## Available attributes
